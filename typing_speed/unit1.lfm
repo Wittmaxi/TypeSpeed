@@ -1,0 +1,67 @@
+object Form1: TForm1
+  Left = 2605
+  Height = 235
+  Top = 240
+  Width = 717
+  Caption = 'Form1'
+  ClientHeight = 235
+  ClientWidth = 717
+  Color = cl3DDkShadow
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 80
+    Height = 36
+    Top = 40
+    Width = 570
+    Caption = 'Tippst Du so schnell wie Maxi?'
+    Font.Height = -32
+    Font.Name = 'Monospace'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object GuessWord: TLabel
+    Left = 328
+    Height = 1
+    Top = 112
+    Width = 1
+    Font.Height = -13
+    Font.Name = 'Monospace'
+    ParentColor = False
+    ParentFont = False
+    OnClick = GuessWordClick
+  end
+  object Edit1: TEdit
+    Left = 80
+    Height = 45
+    Top = 144
+    Width = 570
+    Color = cl3DDkShadow
+    Font.Color = 1376028
+    Font.Height = -24
+    Font.Name = 'Sans'
+    OnChange = Edit1Change
+    ParentFont = False
+    TabOrder = 0
+  end
+  object CorrectWords: TLabel
+    Left = 80
+    Height = 1
+    Top = 207
+    Width = 1
+    ParentColor = False
+  end
+  object TimeLeft: TLabel
+    Left = 328
+    Height = 1
+    Top = 207
+    Width = 1
+    ParentColor = False
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    left = 1
+    top = 50
+  end
+end
